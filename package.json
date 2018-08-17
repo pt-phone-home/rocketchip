@@ -1,0 +1,16 @@
+{
+  "name": "rocketchip",
+  "version": "1.0.0",
+  "description": "Web Solutions",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/style.css -w"
+  },
+  "author": "Rocket.Chip Web Solutions",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "jquery": "^3.3.1",
+    "node-sass": "^4.9.2"
+  }
+}
