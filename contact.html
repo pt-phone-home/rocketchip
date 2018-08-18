@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,400i,700,900" rel="stylesheet">
+</head>
+<body>
+        <div class="ct-container">
+                <div class="ct-header">
+                   <a href="index.html" class="ct-header-logo"> <img src="img/color_logo_transparent.png" alt="Logo" class="ct-header-logo__img"></a>
+                    
+                    <ul class="ct-header-main-nav">
+                            <li class="ct-header-main-nav__item"><a href="#" class="ct-header-main-nav__link">What we do</a></li>
+                            <li class="ct-header-main-nav__item"><a href="#" class="ct-header-main-nav__link">Projects</a></li>
+                            <li class="ct-header-main-nav__item"><a href="#" class="ct-header-main-nav__link">About us</a></li>
+                            <li class="ct-header-main-nav__item"><a href="#" class="ct-header-main-nav__link">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="ct-banner">
+                    <h2 class="ct-banner-header"><span class="ct-banner-span">Contact</span> Rocket.Chip Web Solutions </h2>
+                    <p class="ct-banner-info"> Start a conversation with us today</p>
+                </div>
+                <div class="ct-contact">
+                        <div class="ct-contact-overlay1"></div>
+                        <div class="ct-contact-overlay2"></div>
+                        <div class="ct-contact-title">Send us a message</div>
+                        <form action="send_form_email.php" method="post" class="ct-contact-form" >
+                                <label class="ct-contact-form-title">Contact Us</label>
+                                <label for="name" class="ct-contact-form-name">Name</label>
+                                <input type="text" name="name" id="name" placeholder="Enter Your Name" class="contact-form-name__input" required>
+                                <label for="email" class="ct-contact-form-email">Email</label>
+                                <input type="email" name="email" id="email" placeholder="Enter Your Email Address" class="contact-form-email__input" required>
+                                <label for="phone" class="ct-contact-form-phone">Contact Number</label>
+                                <input type="number" name="phone" id="phone" class="ct-contact-form-phone__input">
+                                <label for="message" class="ct-contact-form-message">Your Message</label>
+                                <textarea name="message" id="message" cols="30" rows="10" class="ct-contact-form-message__input"></textarea>
+                                <label for="submit" class="ct-contact-form-submit">&nbsp;</label>
+                                <input type="submit" name="submit" id="submit" value="submit" class="ct-contact-form-submit__input">
+                        </form>
+                </div>
+
+
+
+                <footer class="footer-container">
+                                <div class="footer">
+                                    <img src="img/color_logo_transparent.png" alt="Logo" class="logo-footer">
+                    
+                                    <ul class="footer-nav">
+                                        <li class="footer-nav__item"><a href="#" class="footer-nav__link">What we do</a></li>
+                                        <li class="footer-nav__item"><a href="#" class="footer-nav__link">Projects</a></li>
+                                        <li class="footer-nav__item"><a href="#" class="footer-nav__link">About us</a></li>
+                                        <li class="footer-nav__item"><a href="#" class="footer-nav__link">Contact</a></li>
+                                    </ul>
+                                    <div class="footer-social">
+                                        <li class="footer-social__item"><a href="#" class="footer-social__link"><i class="fab fa-facebook footer-social__img"></i></a></li>
+                                        <li class="footer-social__item"><a href="#" class="footer-social__link"><i class="fab fa-twitter footer-social__img"></i></a></li>
+                                    </div>
+                                    <div class="footer-company">
+                                        &copy; 2018. Made with <span class="footer-company__span">&hearts;</span> by Rocket.Chip Web Solutions
+                                    </div>
+                                </div>
+                                
+                </footer>
+        </div>
+
+
+        <script src="main.js"></script>
+</body>
+</html>

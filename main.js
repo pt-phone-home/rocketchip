@@ -7,6 +7,8 @@ var seoHeader = document.querySelector('.seo-header');
 var srHeader = document.querySelector('.sr-header');
 var rdHeader = document.querySelector('.rd-header');
 var ldHeader = document.querySelector('.ld-header');
+var ctHeader = document.querySelector('.ct-header');
+
 
 
 window.addEventListener('scroll', function(){
@@ -97,6 +99,16 @@ window.addEventListener('scroll', function() {
         // menuHeader.classList += " logo_gone";
     } else {
         ldHeader.classList = "ld-header";
+        // menuHeader.classList = "nav_menu_header";
+    }
+});
+
+window.addEventListener('scroll', function() {
+    if (this.window.pageYOffset > 100) {
+        ctHeader.classList += " ct-header-small";
+        // menuHeader.classList += " logo_gone";
+    } else {
+        ctHeader.classList = "ct-header";
         // menuHeader.classList = "nav_menu_header";
     }
 });
