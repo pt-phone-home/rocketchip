@@ -139,6 +139,20 @@
         align-self: center;
         font-size: 1.3rem;
         text-transform: uppercase;
+
+        &-link {
+            text-decoration: none;
+
+            &:visited {
+                text-decoration: none;
+                color: inherit;
+            }
+
+            &:hover {
+                text-decoration: none;
+                color: inherit;
+            }
+        }
     }
 }
 

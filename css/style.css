@@ -128,6 +128,14 @@ body {
     align-self: center;
     font-size: 1.3rem;
     text-transform: uppercase; }
+    .contact_header__startText-link {
+      text-decoration: none; }
+      .contact_header__startText-link:visited {
+        text-decoration: none;
+        color: inherit; }
+      .contact_header__startText-link:hover {
+        text-decoration: none;
+        color: inherit; }
 
 .gone {
   height: 0; }
