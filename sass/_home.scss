@@ -2,7 +2,7 @@
 
 .home_container {
     display: grid;
-    grid-template-columns: 6rem repeat(10, 1fr) 6rem;
+    grid-template-columns: 12rem repeat(10, 1fr) 12rem;
     grid-row-gap: 1rem;
 }
 // STICKY NAV GRID ROW - APPEARS on Scroll
@@ -74,7 +74,7 @@
     background-image: linear-gradient(to right top, rgba(white, .3) ,rgba( lightgrey, .7)),
                      url(../img/main-header.jpg);
     background-size: cover;
-    background-position: fixed;
+    background-position: center;
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 20%, 100% 86%, 78% 100%, 0 100%, 0% 80%, 0% 20%);
     clip-path: polygon(0 0, 100% 0, 100% 20%, 100% 86%, 78% 100%, 0 100%, 0% 80%, 0% 20%);
 
@@ -188,6 +188,7 @@
 
     @media (max-width: 1200px) {
         grid-template-columns:  30rem minmax(40rem, 1fr);  
+        height: 7rem;
     }
 
     @media (max-width: 830px) {
@@ -676,11 +677,11 @@
 // FEEDBACK - MAIN GRID ROW 5 ///
 
 .feedback-container {
-    grid-column: 1 / -1;
+    grid-column: 2 / 12;
     min-height: 30rem;
 
     display: grid;
-    grid-template-columns: repeat(12, 1fr);
+    grid-template-columns: minxmax(90rem, 1fr)
     
 }
 
@@ -690,7 +691,7 @@
     background-color: rgb(239, 239, 245);
 
     display: grid;
-    grid-template-columns: repeat(3, minmax(35rem, 1fr));
+    grid-template-columns: repeat(3, minmax(25rem, 1fr));
 
     &_customers {
         grid-column: 1 / -1;
