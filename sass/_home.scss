@@ -4,6 +4,7 @@
     display: grid;
     grid-template-columns: 12rem repeat(10, 1fr) 12rem;
     grid-row-gap: 1rem;
+    // grid-template-rows: auto;
 }
 // STICKY NAV GRID ROW - APPEARS on Scroll
 .sticky-nav-bar {
