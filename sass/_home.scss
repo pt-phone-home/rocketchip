@@ -185,7 +185,7 @@
     grid-column: 2 / 9;
     grid-row: 2 / 3;
 
-    height: 12rem;
+    height: 9rem;
     transition: all 400ms ease-in-out;
     display: grid;
     grid-template-columns: repeat(2, minmax(50rem, 1fr));
@@ -211,7 +211,7 @@
     //width: 40rem;
 
     @media (max-width: 1200px) {
-      height: 80%;  
+    //   height: 80%;  
       align-self: center;
     }
 }

@@ -158,7 +158,7 @@ body {
 .nav_menu_header {
   grid-column: 2 / 9;
   grid-row: 2 / 3;
-  height: 12rem;
+  height: 9rem;
   transition: all 400ms ease-in-out;
   display: grid;
   grid-template-columns: repeat(2, minmax(50rem, 1fr)); }
@@ -176,7 +176,6 @@ body {
   transition: all .2s ease-in-out; }
   @media (max-width: 1200px) {
     .header_logo {
-      height: 80%;
       align-self: center; } }
 
 .main-nav {
