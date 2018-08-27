@@ -93,6 +93,9 @@ body {
   transition: all 400ms ease-in-out;
   display: grid;
   grid-template-columns: repeat(4, minmax(30rem, 1fr)); }
+  @media (max-width: 770px) {
+    .contact_header {
+      height: 4rem; } }
   .contact_header__email {
     grid-column: 3 / 4;
     align-self: center;
@@ -173,7 +176,7 @@ body {
   transition: all .2s ease-in-out; }
   @media (max-width: 1200px) {
     .header_logo {
-      height: 50%;
+      height: 80%;
       align-self: center; } }
 
 .main-nav {
