@@ -1,7 +1,19 @@
 .design-container {
     display: grid;
-    grid-template-columns: 6rem repeat(10, 1fr) 6rem;
+    grid-template-columns: 20rem repeat(10, 1fr) 20rem;
     grid-row-gap: 1rem;
+
+    @media (max-width: 1200px) {
+        grid-template-columns: 12rem repeat(10, 1fr) 12rem;
+    }
+
+    @media (max-width: 1100px) {
+        grid-template-columns: 8rem repeat(10, 1fr) 8rem;
+    }
+
+    @media (max-width: 1050px) {
+        grid-template-columns: 2rem repeat(10, 1fr) 2rem;
+    }
 }
 .design-header {
     grid-column: 1 / -1;
@@ -89,24 +101,46 @@
         letter-spacing: 1.2px;
         align-self: start;
         justify-self: center;
+
+        @media (max-width: 650px) {
+            font-size: 2rem;
+        }
     }
 }
 
-.design-process-container {
-    grid-column: 2 / 12;
+// .design-process-container {
+//     grid-column: 2 / 12;
 
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
+//     display: grid;
+//     grid-template-columns: repeat(12, 1fr);
 
-}
+// }
 
 .design-process {
-    grid-column: 1 / -1;
+    grid-column: 2 / 12;
     padding: 2rem;
 
     display: grid;
-    grid-template-columns: repeat(12, 1fr);
+    grid-template-columns: minmax(40rem, 1fr) minmax(50rem, 2fr);
     grid-gap: 1rem;
+
+    @media (max-width: 1000px) {
+        grid-column: 1 / - 1;
+        grid-template-columns: minmax(30rem, 1fr) minmax(40rem, 2fr);
+        padding: 1rem;
+    }
+
+    @media (max-width: 750px) {
+        grid-column: 1 / - 1;
+        grid-template-columns: minmax(25rem, 1fr) minmax(30rem, 2fr);
+        padding: .5rem;
+    }
+
+    @media (max-width: 750px) {
+        grid-column: 1 / - 1;
+        grid-template-columns: 1fr 2fr;
+        padding: .5rem;
+    }
 
     &-intro {
         grid-column: 1 / -1;
@@ -120,11 +154,23 @@
         justify-items: center;
         align-items: center;
 
+        @media (max-width: 1000px) {
+            padding: .5rem;
+        }
+
+        @media (max-width: 750px) {
+            height: auto;
+        }
+
         &__header {
             grid-row: 1 / 2;
             font-size: 3rem;
             line-height: 1.2;
             letter-spacing: 1.2px;
+
+            @media (max-width: 740px) {
+                font-size: 2.5rem;
+            }
         }
 
         &__info {
@@ -137,6 +183,10 @@
             font-size: 1.5rem;
             line-height: 1.4;
             letter-spacing: 1.2px;
+
+            @media (max-width: 740px) {
+                font-size: 1.3rem;
+            }
         }
     }
 

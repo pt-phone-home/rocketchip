@@ -805,8 +805,17 @@ body {
 
 .design-container {
   display: grid;
-  grid-template-columns: 6rem repeat(10, 1fr) 6rem;
+  grid-template-columns: 20rem repeat(10, 1fr) 20rem;
   grid-row-gap: 1rem; }
+  @media (max-width: 1200px) {
+    .design-container {
+      grid-template-columns: 12rem repeat(10, 1fr) 12rem; } }
+  @media (max-width: 1100px) {
+    .design-container {
+      grid-template-columns: 8rem repeat(10, 1fr) 8rem; } }
+  @media (max-width: 1050px) {
+    .design-container {
+      grid-template-columns: 2rem repeat(10, 1fr) 2rem; } }
 
 .design-header {
   grid-column: 1 / -1;
@@ -870,18 +879,31 @@ body {
     letter-spacing: 1.2px;
     align-self: start;
     justify-self: center; }
-
-.design-process-container {
-  grid-column: 2 / 12;
-  display: grid;
-  grid-template-columns: repeat(12, 1fr); }
+    @media (max-width: 650px) {
+      .design-banner-info {
+        font-size: 2rem; } }
 
 .design-process {
-  grid-column: 1 / -1;
+  grid-column: 2 / 12;
   padding: 2rem;
   display: grid;
-  grid-template-columns: repeat(12, 1fr);
+  grid-template-columns: minmax(40rem, 1fr) minmax(50rem, 2fr);
   grid-gap: 1rem; }
+  @media (max-width: 1000px) {
+    .design-process {
+      grid-column: 1/-1;
+      grid-template-columns: minmax(30rem, 1fr) minmax(40rem, 2fr);
+      padding: 1rem; } }
+  @media (max-width: 750px) {
+    .design-process {
+      grid-column: 1/-1;
+      grid-template-columns: minmax(25rem, 1fr) minmax(30rem, 2fr);
+      padding: .5rem; } }
+  @media (max-width: 750px) {
+    .design-process {
+      grid-column: 1/-1;
+      grid-template-columns: 1fr 2fr;
+      padding: .5rem; } }
   .design-process-intro {
     grid-column: 1 / -1;
     height: 20rem;
@@ -892,11 +914,20 @@ body {
     justify-content: center;
     justify-items: center;
     align-items: center; }
+    @media (max-width: 1000px) {
+      .design-process-intro {
+        padding: .5rem; } }
+    @media (max-width: 750px) {
+      .design-process-intro {
+        height: auto; } }
     .design-process-intro__header {
       grid-row: 1 / 2;
       font-size: 3rem;
       line-height: 1.2;
       letter-spacing: 1.2px; }
+      @media (max-width: 740px) {
+        .design-process-intro__header {
+          font-size: 2.5rem; } }
     .design-process-intro__info {
       grid-row: 2 / 3;
       padding-top: 2rem;
@@ -907,6 +938,9 @@ body {
       font-size: 1.5rem;
       line-height: 1.4;
       letter-spacing: 1.2px; }
+      @media (max-width: 740px) {
+        .design-process-intro__info {
+          font-size: 1.3rem; } }
   .design-process-step1, .design-process-step2, .design-process-step3, .design-process-step4 {
     grid-column: 1 / -1;
     height: 32rem;
