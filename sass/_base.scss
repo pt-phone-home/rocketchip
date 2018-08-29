@@ -29,9 +29,17 @@ $background-grey: rgb(239, 239, 245);
 html {
 	font-size: 65%;
 	
-	@media (max-width: 750px) {
-		font-size: 62%;
+	@media (max-width: 1200px) {
+		font-size: 62.5%;
 	}
+
+	@media (max-width: 1000px) {
+		font-size: 60%;
+	}
+
+	// @media (max-width: 750px) {
+	// 	font-size: 62%;
+	// }
 }
 
 body {
