@@ -786,7 +786,7 @@
     grid-row: 5 / 6;
     padding: 2rem 4rem;
     grid-column-gap: 2rem;
-    height: auto;
+    
 
 
     display: grid;
@@ -808,7 +808,7 @@
 
     &_header {
         grid-column: 1 / -1;
-        font-size: 4rem;
+        font-size: 3.5rem;
         justify-self: center;
         margin-bottom: 2rem;
 
