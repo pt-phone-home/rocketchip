@@ -403,6 +403,22 @@ body {
     grid-column: 2 / 3;
     font-size: 1.4rem;
     line-height: 1.5; }
+  .custom-design-button {
+    justify-self: end;
+    background-color: #ff4212;
+    color: white;
+    display: block;
+    width: 10rem;
+    border-radius: 7%;
+    height: 2.5rem;
+    text-align: center;
+    box-shadow: 2px 5px 2px lightgray;
+    transition: all .2s ease-in-out;
+    text-decoration: none; }
+    .custom-design-button:hover {
+      transform: translateY(-2px); }
+    .custom-design-button:active {
+      transform: translateY(2px); }
 
 .planning {
   grid-column: 2 / 3;

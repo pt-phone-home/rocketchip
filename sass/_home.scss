@@ -551,6 +551,28 @@
         // }
     }
 
+    &-button {
+        justify-self: end;
+        background-color: $text-color-secondary;
+        color: white;
+        display: block;
+        width: 10rem;
+        border-radius: 7%;
+        height: 2.5rem;
+        text-align: center;
+        box-shadow:  2px 5px 2px lightgray;
+        transition: all .2s ease-in-out;
+        text-decoration: none;
+
+        &:hover {
+            transform: translateY(-2px);
+        }
+
+        &:active {
+            transform: translateY(2px);
+        }
+    }
+
 }
 
 .planning {
