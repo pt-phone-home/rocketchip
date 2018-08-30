@@ -19,7 +19,7 @@ $text-shadow-light: 0 .5rem 1rem rgba(0, 0, 0, 0.2);
 
 html {
   font-size: 65%; }
-  @media (max-width: 1200px) {
+  @media (max-width: 1250px) {
     html {
       font-size: 62.5%; } }
   @media (max-width: 1000px) {
@@ -801,23 +801,14 @@ body {
   grid-column: 2 / 12;
   padding: 2rem;
   display: grid;
-  grid-template-columns: minmax(40rem, 1fr) minmax(50rem, 2fr);
+  grid-template-columns: 1fr 2fr;
   grid-gap: 1rem; }
   @media (max-width: 1000px) {
     .design-process {
-      grid-column: 1/-1;
-      grid-template-columns: minmax(30rem, 1fr) minmax(40rem, 2fr);
-      padding: 1rem; } }
-  @media (max-width: 750px) {
+      grid-column: 1/-1; } }
+  @media (max-width: 700px) {
     .design-process {
-      grid-column: 1/-1;
-      grid-template-columns: minmax(25rem, 1fr) minmax(30rem, 2fr);
-      padding: .5rem; } }
-  @media (max-width: 750px) {
-    .design-process {
-      grid-column: 1/-1;
-      grid-template-columns: 1fr 2fr;
-      padding: .5rem; } }
+      grid-template-columns: 1fr; } }
   .design-process-intro {
     grid-column: 1 / -1;
     height: 20rem;
@@ -870,16 +861,13 @@ body {
   .design-process-step1__left-side, .design-process-step2__left-side, .design-process-step3__left-side, .design-process-step4__left-side {
     grid-column: 1 / 2;
     padding: 2rem;
-    height: 35rem;
+    height: auto;
     background-size: cover;
     background-position: center;
     border-radius: 2%; }
-    @media (max-width: 930px) {
+    @media (max-width: 700px) {
       .design-process-step1__left-side, .design-process-step2__left-side, .design-process-step3__left-side, .design-process-step4__left-side {
-        height: 30rem; } }
-    @media (max-width: 680px) {
-      .design-process-step1__left-side, .design-process-step2__left-side, .design-process-step3__left-side, .design-process-step4__left-side {
-        height: 25rem; } }
+        display: none; } }
   .design-process-step1__left-side {
     background-image: linear-gradient(to right bottom, rgba(239, 239, 245, 0.5), rgba(239, 239, 245, 0.2)), url(../img/sketch.jpg); }
   .design-process-step2__left-side {
@@ -893,6 +881,9 @@ body {
     padding: 1rem;
     display: grid;
     grid-template-rows: 1fr 2fr; }
+    @media (max-width: 700px) {
+      .design-process-step1__right-side, .design-process-step2__right-side, .design-process-step3__right-side, .design-process-step4__right-side {
+        grid-column: 1 / -1; } }
     .design-process-step1__right-side__title, .design-process-step2__right-side__title, .design-process-step3__right-side__title, .design-process-step4__right-side__title {
       align-self: center;
       justify-self: center;
