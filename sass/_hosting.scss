@@ -1,7 +1,19 @@
 .hosting-container {
     display: grid;
-    grid-template-columns: 6rem repeat(10, 1fr) 6rem;
+    grid-template-columns: 20rem repeat(10, 1fr) 20rem;
     grid-row-gap: 1rem;
+
+    @media (max-width: 1200px) {
+        grid-template-columns: 12rem repeat(10, 1fr) 12rem;
+    }
+
+    @media (max-width: 1100px) {
+        grid-template-columns: 8rem repeat(10, 1fr) 8rem;
+    }
+
+    @media (max-width: 1050px) {
+        grid-template-columns: 2rem repeat(10, 1fr) 2rem;
+    }
 }
 .hosting-header {
     grid-column: 1 / -1;
@@ -105,9 +117,13 @@
     padding: 2rem;
 
     display: grid;
-    grid-template-columns: repeat(2, minmax(42rem, 1fr));
+    grid-template-columns: repeat(2 , 1fr);
     grid-gap: 1rem;
     grid-column-gap: 2rem;
+
+    @media (max-width: 750px) {
+        grid-template-columns: 1fr;
+    }
 
     &-intro {
         grid-column: 1 / -1;
@@ -126,6 +142,10 @@
             font-size: 3rem;
             line-height: 1.2;
             letter-spacing: 1.2px;
+
+            @media (max-width: 640px) {
+                font-size: 2.4rem;
+            }
         }
 
         &__info {
@@ -143,6 +163,10 @@
         border: 1.2px dashed $text-color-secondary;
         padding: 2rem;
 
+        @media (max-width: 750px) {
+            grid-column: 1 / -1;
+        }
+
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 2fr 2fr;
@@ -151,7 +175,12 @@
             grid-column: 1 / -1;
             grid-row: 1 / 2;
             justify-self: center;
-            font-size: 4rem;
+            font-size: 3rem;
+
+            @media (max-width: 640px) {
+                font-size: 2.4rem;
+                margin-bottom: 1rem;
+            }
         }
 
         &-icon {
@@ -178,6 +207,11 @@
         border: 1.2px dashed $text-color-secondary;
         padding: 2rem;
 
+        @media (max-width: 750px) {
+            grid-column: 1 / -1;
+            grid-row: 3 / 4;
+        }
+
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 2fr 2fr;
@@ -186,7 +220,11 @@
             grid-column: 1 / -1;
             grid-row: 1 / 2;
             justify-self: center;
-            font-size: 4rem;
+            font-size: 3rem;
+
+            @media (max-width: 640px) {
+                font-size: 2.4rem;
+            }
         }
 
         &-icon {

@@ -1,7 +1,19 @@
 .seo-container {
     display: grid;
-    grid-template-columns: 6rem repeat(10, 1fr) 6rem;
+    grid-template-columns: 20rem repeat(10, 1fr) 20rem;
     grid-row-gap: 1rem;
+
+    @media (max-width: 1200px) {
+        grid-template-columns: 12rem repeat(10, 1fr) 12rem;
+    }
+
+    @media (max-width: 1100px) {
+        grid-template-columns: 8rem repeat(10, 1fr) 8rem;
+    }
+
+    @media (max-width: 1050px) {
+        grid-template-columns: 2rem repeat(10, 1fr) 2rem;
+    }
 }
 .seo-header {
     grid-column: 1 / -1;
@@ -95,11 +107,11 @@
 
 .seo-details {
     grid-column: 2 / 12;
-    height: 20rem;
+    height: auto;
     border: 1.2px dashed $text-color-secondary;
 
     display: grid;
-    grid-template-columns: repeat(2, minmax(42rem, 1fr));
+    grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 1fr 3fr;
     grid-gap: 1rem;
     grid-column-gap: 2rem;
@@ -112,6 +124,17 @@
         letter-spacing: 1.2px;
         align-self: center;
         justify-self: center;
+        padding: 1rem;
+
+        @media (max-width: 560px) {
+            font-size: 2.4rem;
+        }
+
+        @media (max-width: 450px) {
+            font-size: 2.3rem;
+        }
+
+
     }
 
     &-info {
@@ -121,6 +144,18 @@
         justify-self: center;
         font-size: 1.5rem;
         letter-spacing: 1.1px;
+
+        @media (max-width: 1300px) {
+            padding: 2rem 8rem;
+        }
+
+        @media (max-width: 560px) {
+            padding: 2rem 5rem;
+        }
+
+        @media (max-width: 450px) {
+            padding: 1rem 3rem;
+        }
 
         &-span {
             color: $text-color-secondary;
@@ -153,12 +188,12 @@
 }
 
 .seo-process {
-    grid-column: 1 / -1;
+    grid-column: 2 / 12;
     height: 25rem;
     border: 1.2px dashed $text-color-secondary;
 
     display: grid;
-    grid-template-columns: repeat(2, minmax(42rem, 1fr));
+    grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 1fr 3fr;
     grid-gap: 1rem;
     grid-column-gap: 2rem;
