@@ -2,6 +2,7 @@
     display: grid;
     grid-template-columns: 20rem repeat(10, 1fr) 20rem;
     grid-row-gap: 1rem;
+    height: auto;
 
     @media (max-width: 1200px) {
         grid-template-columns: 12rem repeat(10, 1fr) 12rem;
@@ -107,8 +108,17 @@
 
 .ct-contact {
     grid-column: 2 / 12;
+    grid-row: 3 / 4;
     height: 50rem; //50
-    max-height: 80rem;
+
+    @media (max-width: 880px) {
+        height: 72rem;
+    }
+
+    @media (max-width: 490px) {
+        height: 77rem;
+    }
+    
 
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -116,8 +126,8 @@
     grid-auto-rows: 1fr;
 
     &-overlay1 {
-        grid-column: 1 / -1;
-        grid-row: 1 / -1;
+        grid-column: 2 / 12;
+        grid-row: 3 / 4;
         background-image: linear-gradient(to right bottom, rgba($text-color-secondary, 1), rgba($text-color-secondary, 1));
         z-index: 2;
         height: 100%;
@@ -127,8 +137,8 @@
     }
 
     &-overlay2 {
-        grid-column: 1 / -1;
-        grid-row: 1 / -1;
+        grid-column: 2 / 12;
+        grid-row: 3 / 4;
         height: 100%;
         z-index: 1;
         background-color: $background-grey;
@@ -243,6 +253,7 @@
         @media (max-width: 880px) {
             grid-column: 1 / -1;
             grid-row: 4 / 5;
+            padding: 2rem 1rem 0rem 1rem;
         }
 
         display: grid;
@@ -259,6 +270,7 @@
 
         &-socialLogos {
             justify-self: center;
+            margin-bottom: 1rem;
             display: grid;
             grid-template-columns: 1fr 1fr;
 

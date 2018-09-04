@@ -71,7 +71,7 @@
 .head_container {
     grid-column: 1 / -1;
     grid-row: 2 / 3;
-    height: 100vh;
+    height: 80vh;
     margin-top: -1rem;
 
     display: grid;
@@ -294,9 +294,9 @@
 
 .scrolling_text_container {
     grid-column: 1 / -1;
-    grid-row: 3 / 4;
+    grid-row: 1 / 2;
 
-    height: 45rem;
+    height: auto;
 
     display: grid;
     // grid-template-columns: repeat(2, 1fr);
