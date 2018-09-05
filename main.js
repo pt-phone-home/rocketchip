@@ -18,25 +18,51 @@ const cont = document.querySelector('.cont');
 const tog = document.querySelector('.tog');
 
 menuButton.addEventListener('click', () => {
-    
-    homeNav.style.gridTemplateRows = "repeat(5, 6rem)";
-    homeNav.style.gridAutoRows = "6rem";
-    homeNav.style.backgroundColor = "$background-grey";
-    // homeNav.style.gridTemplateAreas = "tog" 
-    //                                 "do"
-    //                                 "proj"
-    //                                 "about"
-    //                                 "cont";
-    doo.style.visibility = 'visible';
-    proj.style.visibility = 'visible';
-    about.style.visibility = 'visible';
-    cont.style.visibility = 'visible';
-    tog.style.visibility = 'visible';
-    
+    homeNav.classList.toggle('responsive');
+    doo.style.visibility = "visible";
+    proj.style.visibility = "visible";
+    about.style.visibility = "visible";
+    cont.style.visibility = "visible";
+    tog.style.visibility = "visible";
+});
 
-})
+// menuButton.addEventListener('click', () => {
+//     if (homeNav.style.gridAutoRows = "0rem") {
+//     homeNav.classList += " responsive";
+//     doo.style.visibility = "visible";
+//     proj.style.visibility = "visible";
+//     about.style.visibility = "visible";
+//     cont.style.visibility = "visible";
+//     tog.style.visibility = "visible";
+//     } else {
+//     // if (homeNav.classList = "home-header-main-nav responsive") {
+//         homeNav.classList.remove(" responsive");
+//         doo.style.visibility = "hidden";
+//         proj.style.visibility = "hidden";
+//         about.style.visibility = "hidden";
+//         cont.style.visibility = "hidden";
+//         tog.style.visibility = "hidden";
+//     }
+// });
 
+// menuButton.addEventListener('click', () => {
+// if (homeNav.classList.contains(" responsive")) {
+//     homeNav.classList.remove("responsive");
+//         doo.style.visibility = "hidden";
+//         proj.style.visibility = "hidden";
+//         about.style.visibility = "hidden";
+//         cont.style.visibility = "hidden";
+//         tog.style.visibility = "hidden";
+// } else {
+//     homeNav.classList += " responsive";
+//     doo.style.visibility = "visible";
+//     proj.style.visibility = "visible";
+//     about.style.visibility = "visible";
+//     cont.style.visibility = "visible";
+//     tog.style.visibility = "visible";
+// }
 
+// });
 
 window.addEventListener('scroll', function(){
     if (window.pageYOffset >= 50) {

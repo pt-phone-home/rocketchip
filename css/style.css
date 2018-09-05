@@ -99,7 +99,7 @@ body {
       color: black; }
       @media (max-width: 850px) {
         .home-header-main-nav__link {
-          color: white; } }
+          color: black; } }
     .home-header-main-nav__link:hover {
       transform: translateY(5px);
       color: #ff4212; }
@@ -117,6 +117,11 @@ body {
             transform: scale(1.2); }
           .home-header-main-nav__icon:active {
             transform: rotate(90deg); } }
+
+.responsive {
+  grid-template-rows: repeat(5, 6rem);
+  grid-auto-rows: 6rem;
+  background-color: #cfcfd2; }
 
 .do {
   grid-area: do; }
@@ -184,8 +189,8 @@ body {
   display: grid;
   grid-template-columns: repeat(9, 1fr);
   background-image: linear-gradient(to right top, rgba(255, 255, 255, 0.3), rgba(211, 211, 211, 0.7)), url(../img/main-header.jpg);
-  background-size: cover;
-  background-position: center;
+  background-size: 100%;
+  background-position: top center;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 20%, 100% 86%, 78% 100%, 0 100%, 0% 80%, 0% 20%);
   clip-path: polygon(0 0, 100% 0, 100% 20%, 100% 86%, 78% 100%, 0 100%, 0% 80%, 0% 20%);
   position: relative;

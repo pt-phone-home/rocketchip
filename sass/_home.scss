@@ -69,9 +69,6 @@
             "cont";
             overflow: visible;
             z-index: 100;
-            // background-color: $background-grey;
-            // color: white;
-            // height: auto;
         }
 
         &__item {
@@ -94,7 +91,7 @@
             color: $text-color-primary;
 
             @media (max-width: 850px) {
-                color: white;
+                color: black;
             }
         }
     
@@ -125,6 +122,12 @@
         }
     }
 }
+.responsive {
+    grid-template-rows: repeat(5, 6rem);
+    grid-auto-rows: 6rem;
+    background-color: rgb(207, 207, 210);
+}
+
 .do {
     grid-area: do;
 }
@@ -217,8 +220,8 @@
 
     background-image: linear-gradient(to right top, rgba(white, .3) ,rgba( lightgrey, .7)),
                      url(../img/main-header.jpg);
-    background-size: cover;
-    background-position: center;
+    background-size: 100%;
+    background-position: top center;
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 20%, 100% 86%, 78% 100%, 0 100%, 0% 80%, 0% 20%);
     clip-path: polygon(0 0, 100% 0, 100% 20%, 100% 86%, 78% 100%, 0 100%, 0% 80%, 0% 20%);
 
