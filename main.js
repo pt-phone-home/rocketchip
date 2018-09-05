@@ -11,9 +11,29 @@ var ldHeader = document.querySelector('.ld-header');
 var ctHeader = document.querySelector('.ct-header');
 const menuButton = document.querySelector('.home-header-main-nav__icon');
 const homeNav = document.querySelector('.home-header-main-nav');
+const doo = document.querySelector('.do');
+const proj = document.querySelector('.proj');
+const about = document.querySelector('.about');
+const cont = document.querySelector('.cont');
+const tog = document.querySelector('.tog');
 
 menuButton.addEventListener('click', () => {
+    
     homeNav.style.gridTemplateRows = "repeat(5, 6rem)";
+    homeNav.style.gridAutoRows = "6rem";
+    homeNav.style.backgroundColor = "$background-grey";
+    // homeNav.style.gridTemplateAreas = "tog" 
+    //                                 "do"
+    //                                 "proj"
+    //                                 "about"
+    //                                 "cont";
+    doo.style.visibility = 'visible';
+    proj.style.visibility = 'visible';
+    about.style.visibility = 'visible';
+    cont.style.visibility = 'visible';
+    tog.style.visibility = 'visible';
+    
+
 })
 
 

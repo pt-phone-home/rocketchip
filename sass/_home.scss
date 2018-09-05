@@ -51,17 +51,27 @@
 
         display: grid;
         grid-template-columns: repeat(4, 1fr) 0rem;
-        // grid-template-areas: 
-        //     "do proj about cont";
+        grid-template-areas: 
+            "do proj about cont tog";
         margin-right: .5rem;
         
         @media (max-width: 850px) {
-            grid-template-columns: 1fr; //repeat(4, 0rem);
+            grid-template-columns: 1fr; 
+            //repeat(4, 0rem);
+            grid-template-rows: repeat(1, 6rem); //repeat(4, 6rem);
+            grid-auto-rows: 0rem;
             grid-auto-flow: row;
-            grid-template-rows: 6rem repeat(4, 6rem);
+            grid-template-areas: 
+            "tog"
+            "do" 
+            "proj" 
+            "about" 
+            "cont";
             overflow: visible;
             z-index: 100;
-            height: auto;
+            // background-color: $background-grey;
+            // color: white;
+            // height: auto;
         }
 
         &__item {
@@ -70,7 +80,8 @@
             @media (max-width: 850px) {
                 &:not(:last-child) {
                     visibility: hidden;
-                    grid-row: 1 / 2;
+                    // width: 0rem;
+                    // height: 0rem;
                     justify-self: end;
                 }
             }
@@ -81,6 +92,10 @@
             font-size: 1.3rem;
             text-transform: uppercase;
             color: $text-color-primary;
+
+            @media (max-width: 850px) {
+                color: white;
+            }
         }
     
         &__link:hover {
@@ -93,26 +108,42 @@
 
             @media(max-width: 850px) {
                 visibility: visible;
+                grid-column: 1 / 2;
                 grid-row: 1 / 2;
+                font-size: 2rem;
+                color: $text-color-secondary;
+                transition: all .3s ease-in-out;
+
+                &:hover {
+                    transform: scale(1.2);
+                }
+
+                &:active {
+                    transform: rotate(90deg);
+                }
             }
         }
     }
 }
-// .do {
-//     grid-area: do;
-// }
+.do {
+    grid-area: do;
+}
 
-// .proj {
-//     grid-area: proj;
-// }
+.proj {
+    grid-area: proj;
+}
 
-// .about {
-//     grid-area: about;
-// }
+.about {
+    grid-area: about;
+}
 
-// .cont {
-//     grid-area: cont;
-// }
+.cont {
+    grid-area: cont;
+}
+
+.tog {
+    grid-area: tog;
+}
 
 .home-header-small {
     height: 5rem;
