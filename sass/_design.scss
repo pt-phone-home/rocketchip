@@ -25,7 +25,7 @@
     z-index: 100;
 
     display: grid;
-    grid-template-columns: repeat(2, minmax(50rem, 1fr));
+    grid-template-columns: repeat(2, 1fr);
 
     &-logo {
         grid-column: 1 / 2;

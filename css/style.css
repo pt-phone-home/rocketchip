@@ -47,6 +47,68 @@ body {
     .home_container {
       grid-template-columns: 12rem repeat(10, 1fr) 12rem; } }
 
+.home-header {
+  grid-column: 1 / -1;
+  height: 8rem;
+  position: sticky;
+  top: 0;
+  transition: all .5s ease-in-out;
+  background-color: #DEDDE0;
+  z-index: 100;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); }
+  @media (max-width: 1100px) {
+    .home-header {
+      height: 6rem; } }
+  @media (max-width: 850px) {
+    .home-header {
+      grid-template-columns: min-content 1fr; } }
+  .home-header-logo {
+    grid-column: 1 / 2;
+    height: inherit; }
+    .home-header-logo__img {
+      height: 100%; }
+  .home-header-main-nav {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    align-items: center;
+    justify-items: end;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr) 0rem;
+    margin-right: .5rem; }
+    @media (max-width: 850px) {
+      .home-header-main-nav {
+        grid-template-columns: 1fr;
+        grid-auto-flow: row;
+        grid-template-rows: 6rem repeat(4, 6rem);
+        overflow: visible;
+        z-index: 100;
+        height: auto; } }
+    .home-header-main-nav__item {
+      list-style: none; }
+      @media (max-width: 850px) {
+        .home-header-main-nav__item:not(:last-child) {
+          visibility: hidden;
+          grid-row: 1 / 2;
+          justify-self: end; } }
+    .home-header-main-nav__link {
+      text-decoration: none;
+      font-size: 1.3rem;
+      text-transform: uppercase;
+      color: black; }
+    .home-header-main-nav__link:hover {
+      transform: translateY(5px);
+      color: #ff4212; }
+    .home-header-main-nav__icon {
+      visibility: hidden; }
+      @media (max-width: 850px) {
+        .home-header-main-nav__icon {
+          visibility: visible;
+          grid-row: 1 / 2; } }
+
+.home-header-small {
+  height: 5rem; }
+
 .sticky-nav-bar {
   grid-column: 1 / -1;
   grid-row: 1 / 2;
@@ -740,7 +802,7 @@ body {
   background-color: white;
   z-index: 100;
   display: grid;
-  grid-template-columns: repeat(2, minmax(50rem, 1fr)); }
+  grid-template-columns: repeat(2, 1fr); }
   .design-header-logo {
     grid-column: 1 / 2;
     height: inherit; }
