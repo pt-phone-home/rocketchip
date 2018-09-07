@@ -69,6 +69,7 @@
             "cont";
             overflow: visible;
             z-index: 100;
+            transition: all .5s ease-in-out;
         }
 
         &__item {
@@ -80,6 +81,7 @@
                     // width: 0rem;
                     // height: 0rem;
                     justify-self: end;
+                    transition: all .5s ease-in-out;
                 }
             }
         }
@@ -126,10 +128,12 @@
     grid-template-rows: repeat(5, 6rem);
     grid-auto-rows: 6rem;
     background-color: rgb(207, 207, 210);
+    transition: all .5s ease-in-out;
 }
 
 .do {
     grid-area: do;
+    visibility: hidden;
 }
 
 .proj {
@@ -146,6 +150,10 @@
 
 .tog {
     grid-area: tog;
+}
+
+.visibility {
+    visibility: visible;
 }
 
 .home-header-small {

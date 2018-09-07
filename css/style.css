@@ -85,13 +85,15 @@ body {
         grid-auto-flow: row;
         grid-template-areas: "tog" "do"  "proj"  "about"  "cont";
         overflow: visible;
-        z-index: 100; } }
+        z-index: 100;
+        transition: all .5s ease-in-out; } }
     .home-header-main-nav__item {
       list-style: none; }
       @media (max-width: 850px) {
         .home-header-main-nav__item:not(:last-child) {
           visibility: hidden;
-          justify-self: end; } }
+          justify-self: end;
+          transition: all .5s ease-in-out; } }
     .home-header-main-nav__link {
       text-decoration: none;
       font-size: 1.3rem;
@@ -121,10 +123,12 @@ body {
 .responsive {
   grid-template-rows: repeat(5, 6rem);
   grid-auto-rows: 6rem;
-  background-color: #cfcfd2; }
+  background-color: #cfcfd2;
+  transition: all .5s ease-in-out; }
 
 .do {
-  grid-area: do; }
+  grid-area: do;
+  visibility: hidden; }
 
 .proj {
   grid-area: proj; }
@@ -137,6 +141,9 @@ body {
 
 .tog {
   grid-area: tog; }
+
+.visibility {
+  visibility: visible; }
 
 .home-header-small {
   height: 5rem; }
