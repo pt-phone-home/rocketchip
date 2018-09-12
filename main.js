@@ -16,10 +16,11 @@ const proj = document.querySelector('.proj');
 const about = document.querySelector('.about');
 const cont = document.querySelector('.cont');
 const tog = document.querySelector('.tog');
+const navItem = document.querySelector('.home-header-main-nav__item');
 
 menuButton.addEventListener('click', () => {
     homeNav.classList.toggle('responsive');
-    doo.style.visibility = "visible";
+    doo.classList.toggle('visible');
     proj.style.visibility = "visible";
     about.style.visibility = "visible";
     cont.style.visibility = "visible";
@@ -93,10 +94,10 @@ window.addEventListener('scroll', function() {
         // menuHeader.classList = "nav_menu_header";
     }
 
-    if (this.window.pageYOffset > 400) {
-        homeHeader.style.backgroundColor = "white";
-    } else {
+    if (this.window.pageYOffset > 600) {
         homeHeader.style.backgroundColor = "#DEDDE0";
+    } else {
+        homeHeader.style.backgroundColor = "white";
     }
 });
 
