@@ -89,12 +89,18 @@
     &-header {
         grid-column: 1 / 2;
         grid-row: 1 / 2;
-        font-size: 3rem;
+        font-size: 2.7rem;
         line-height: 1.2;
         letter-spacing: 1.2px;
         justify-self: center;
         align-self: center;
+
+        @media (max-width: 450px) {
+            font-size: 2.5rem;
+        }
     }
+
+
 
     &-span {
         color: $text-color-secondary;
@@ -121,6 +127,10 @@
 
     @media (max-width: 490px) {
         height: 77rem;
+    }
+
+    @media (max-width: 400px) {
+        height: 85rem;
     }
     
 

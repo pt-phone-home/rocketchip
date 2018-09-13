@@ -264,6 +264,7 @@
 
     display: grid;
     grid-template-columns: repeat(9, 1fr);
+    grid-template-rows: 1.5fr 1fr;
     // grid-template-rows: 6rem 12rem 45rem;
 
     background-image: linear-gradient(to right top, rgba(white, .3) ,rgba( lightgrey, .7)),
@@ -283,6 +284,14 @@
 
     @media (max-width: 750px) {
         height: 50rem;
+    }
+
+    &-logo {
+        height: 9rem;
+        grid-row: 1 / 2;
+        grid-column: 1 / -1;
+        justify-self: center;
+        align-self: center;
     }
 }
 
@@ -487,7 +496,7 @@
 
 .scrolling_text_container {
     grid-column: 1 / -1;
-    grid-row: 1 / 2;
+    grid-row: 2 / 3;
 
     height: auto;
 
@@ -627,6 +636,10 @@
 
     @media (max-width: 850px) {
        grid-row: 1 / 2;
+    }
+
+    @media (max-width: 400px) {
+        padding-left: 1rem;
     }
 
     &__red {
