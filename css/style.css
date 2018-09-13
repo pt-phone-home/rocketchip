@@ -1968,7 +1968,7 @@ body {
     align-self: center; }
     @media (max-width: 450px) {
       .ct-banner-header {
-        font-size: 2.5rem; } }
+        font-size: 2rem; } }
   .ct-banner-span {
     color: #ff4212; }
   .ct-banner-info {
@@ -1978,6 +1978,13 @@ body {
     justify-self: center;
     font-size: 2.2rem;
     letter-spacing: 1.2px; }
+    @media (max-width: 650px) {
+      .ct-banner-info {
+        font-size: 1.7rem; } }
+    @media (max-width: 500px) {
+      .ct-banner-info {
+        padding-left: 15rem;
+        padding-right: 10rem; } }
 
 .ct-contact {
   grid-column: 2 / 12;
@@ -1995,7 +2002,7 @@ body {
       height: 77rem; } }
   @media (max-width: 400px) {
     .ct-contact {
-      height: 85rem; } }
+      height: 100rem; } }
   .ct-contact-overlay1 {
     grid-column: 2 / 12;
     grid-row: 3 / 4;
