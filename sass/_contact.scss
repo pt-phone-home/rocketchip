@@ -132,6 +132,7 @@
 
     @media (max-width: 880px) {
         height: 72rem;
+        grid-column: 1 / -1;
     }
 
     @media (max-width: 490px) {
@@ -139,7 +140,7 @@
     }
 
     @media (max-width: 400px) {
-        height: 100rem;
+        // height: 100rem;
     }
 
     
@@ -158,6 +159,14 @@
         -webkit-clip-path: polygon(100% 24%, 100% 24%, 100% 100%, 21% 100%);
     clip-path: polygon(100% 24%, 100% 24%, 100% 100%, 21% 100%);
 
+    @media (max-width: 880px) {
+        grid-column: 1 / -1;
+    }
+
+    @media (max-width: 450px) {
+        grid-template-rows: 60px repeat(3, 1fr);
+    }
+
     }
 
     &-overlay2 {
@@ -166,6 +175,10 @@
         height: 100%;
         z-index: 1;
         background-color: $background-grey;
+
+        @media (max-width: 880px) {
+            grid-column: 1 / -1;
+        }
 
     }
 
