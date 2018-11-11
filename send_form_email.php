@@ -1,27 +1,33 @@
 <html lang="en">
+
 <head>
-   <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-125112334-3"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-125112334-3"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
 
-  gtag('config', 'UA-125112334-3');
-</script>
+		function gtag() {
+			dataLayer.push(arguments);
+		}
+		gtag('js', new Date());
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="description" content="Welcome to Rocket.Chip Web Solutions. Dublin-based web design and development company who specialise in creating websites for small and medium businesses">
-    <meta name="keywords" content="Web design, web development, Dublin-based, affordable, Small business, responsive design, custom design">
-    <title>Contact Us - Thank you</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Lato:400,400i,700,900" rel="stylesheet">
+		gtag('config', 'UA-125112334-3');
+	</script>
+
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="description" content="Welcome to Rocket.Chip Web Solutions. Dublin-based web design and development company who specialise in creating websites for small and medium businesses">
+	<meta name="keywords" content="Web design, web development, Dublin-based, affordable, Small business, responsive design, custom design">
+	<title>Contact Us - Thank you</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ"
+	 crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Lato:400,400i,700,900" rel="stylesheet">
 </head>
+
 <body>
-<?php
+	<?php
 if(isset($_POST['email'])) {
  
     // EDIT THE 2 LINES BELOW AS REQUIRED
@@ -96,70 +102,103 @@ $headers = 'From: '.$email_from."\r\n".
 'X-Mailer: PHP/' . phpversion();
 @mail($email_to, $email_subject, $email_message, $headers);  
 ?>
- 
-<!-- include your own success html here -->
- 
+
+	<!-- include your own success html here -->
 
 
 
-<!-- javascript redirect or PhP redirect-->
 
-<?php
+	<!-- javascript redirect or PhP redirect-->
+
+	<?php
  
 }
 ?>
-    <div class="ct-container">
-        <div class="home-header contact-header">
-            <a href="index.html" class="home-header-logo"> <img src="img/color_logo_transparent.png" alt="Logo" class="home-header-logo__img"></a>
-             
-             <ul class="home-header-main-nav ">
-                    <li class="home-header-main-nav__item home"><a href="index.html" class="home-header-main-nav__link">Home</a></li>
-                     <li class="home-header-main-nav__item do"><a href="index.html#whatWeDo" class="home-header-main-nav__link">What we do</a></li>
-                     <li class="home-header-main-nav__item proj"><a href="#" class="home-header-main-nav__link">Projects</a></li>
-                     <li class="home-header-main-nav__item about"><a href="index.html#aboutUs" class="home-header-main-nav__link">About us</a></li>
-                     <li class="home-header-main-nav__item cont"><a href="contact.html" class="home-header-main-nav__link">Contact</a></li>
-                     <li class="home-header-main-nav__item tog"><i class="fas fa-bars home-header-main-nav__icon"></i></li>
+	<div class="ct-container">
+		<div class="home-header contact-header">
+			<a href="index.html" class="home-header-logo">
+				<img src="img/color_logo_transparent.png" alt="Logo" class="home-header-logo__img">
+			</a>
 
-             </ul>
-         </div>
-        <div class="ct-banner">
-                <h2 class="ct-banner-header"><span class="ct-banner-span">Contact</span> Rocket.Chip Web Solutions </h2>
-                <p class="ct-banner-info"> Start a conversation with us today</p>
-        </div>
-        <div class="ct-contact-overlay1"></div>
-        <div class="ct-contact-overlay2"></div>
-        <div class="ct-contact">
-                <h2 class="ct-contact-php-header">Thank you for contacting us</h2>
-                <p class="ct-contact-php-para">A member of our team will be in touch with you shortly</p>
-        </div>
+			<ul class="home-header-main-nav ">
+				<li class="home-header-main-nav__item home">
+					<a href="index.html" class="home-header-main-nav__link">Home</a>
+				</li>
+				<li class="home-header-main-nav__item do">
+					<a href="index.html#whatWeDo" class="home-header-main-nav__link">What we do</a>
+				</li>
+				<li class="home-header-main-nav__item proj">
+					<a href="projects.html" class="home-header-main-nav__link">Projects</a>
+				</li>
+				<li class="home-header-main-nav__item about">
+					<a href="index.html#aboutUs" class="home-header-main-nav__link">About us</a>
+				</li>
+				<li class="home-header-main-nav__item cont">
+					<a href="contact.html" class="home-header-main-nav__link">Contact</a>
+				</li>
+				<li class="home-header-main-nav__item tog">
+					<i class="fas fa-bars home-header-main-nav__icon"></i>
+				</li>
 
-
-
-        <footer class="footer-container">
-            <div class="footer">
-                <img src="img/color_logo_transparent.png" alt="Logo" class="logo-footer">
-                    
-                                    <ul class="footer-nav">
-                                    <li class="footer-nav__item"><a href="index.html#whatWeDo" class="footer-nav__link">What we do</a></li>
-                                <li class="footer-nav__item"><a href="#" class="footer-nav__link">Projects</a></li>
-                                <li class="footer-nav__item"><a href="index.html#aboutUs" class="footer-nav__link">About us</a></li>
-                                <li class="footer-nav__item"><a href="contact.html" class="footer-nav__link">Contact</a></li>
-                        </ul>
-                                    <div class="footer-social">
-                                    <li class="footer-social__item"><a href="https://www.facebook.com/RocketChip-Web-Solutions-1301032113361765/" target="_blank" class="footer-social__link"><i class="fab fa-facebook footer-social__img"></i></a></li>
-                                <li class="footer-social__item"><a href="https://twitter.com/chip_rocket" target="_blank" class="footer-social__link"><i class="fab fa-twitter footer-social__img"></i></a></li>
-                            </div>
-                                    <div class="footer-company">
-                                        &copy; 2018. Made with <span class="footer-company__span">&hearts;</span> by Rocket.Chip Web Solutions
-                                    </div>
-                                
-            </div>
-                                
-        </footer>
-    </div>
-    
+			</ul>
+		</div>
+		<div class="ct-banner">
+			<h2 class="ct-banner-header">
+				<span class="ct-banner-span">Contact</span> Rocket.Chip Web Solutions </h2>
+			<p class="ct-banner-info"> Start a conversation with us today</p>
+		</div>
+		<div class="ct-contact-overlay1"></div>
+		<div class="ct-contact-overlay2"></div>
+		<div class="ct-contact">
+			<h2 class="ct-contact-php-header">Thank you for contacting us</h2>
+			<p class="ct-contact-php-para">A member of our team will be in touch with you shortly</p>
+		</div>
 
 
-        <script src="main.js"></script>
+
+		<footer class="footer-container">
+			<div class="footer">
+				<img src="img/color_logo_transparent.png" alt="Logo" class="logo-footer">
+
+				<ul class="footer-nav">
+					<li class="footer-nav__item">
+						<a href="index.html#whatWeDo" class="footer-nav__link">What we do</a>
+					</li>
+					<li class="footer-nav__item">
+						<a href="projects.html" class="footer-nav__link">Projects</a>
+					</li>
+					<li class="footer-nav__item">
+						<a href="index.html#aboutUs" class="footer-nav__link">About us</a>
+					</li>
+					<li class="footer-nav__item">
+						<a href="contact.html" class="footer-nav__link">Contact</a>
+					</li>
+				</ul>
+				<div class="footer-social">
+					<li class="footer-social__item">
+						<a href="https://www.facebook.com/RocketChip-Web-Solutions-1301032113361765/" target="_blank" class="footer-social__link">
+							<i class="fab fa-facebook footer-social__img"></i>
+						</a>
+					</li>
+					<li class="footer-social__item">
+						<a href="https://twitter.com/chip_rocket" target="_blank" class="footer-social__link">
+							<i class="fab fa-twitter footer-social__img"></i>
+						</a>
+					</li>
+				</div>
+				<div class="footer-company">
+					&copy; 2018. Made with
+					<span class="footer-company__span">&hearts;</span> by Rocket.Chip Web Solutions
+				</div>
+
+			</div>
+
+		</footer>
+	</div>
+
+
+
+	<script src="main.js"></script>
 </body>
+
 </html>

@@ -2134,3 +2134,54 @@ body {
 input,
 textarea {
   border-radius: 3px; }
+
+.samples {
+  grid-column: 1 / -1;
+  height: auto;
+  border: 1.2px dashed #ff4212;
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  grid-column-gap: 1rem; }
+  .samples-heading {
+    grid-column: 1 / -1;
+    justify-self: center;
+    margin-bottom: 1.5rem;
+    font-size: 1.7rem; }
+  .samples-content {
+    grid-column: 1 / -1;
+    display: grid;
+    grid-template-columns: 1fr 2fr; }
+    .samples-content-logo {
+      grid-column: 1 / 2;
+      font-size: 15rem;
+      justify-self: center;
+      color: #ff4212; }
+      @media (max-width: 700px) {
+        .samples-content-logo {
+          display: none; } }
+    .samples-content-links {
+      grid-column: 2 / 3;
+      align-self: center;
+      margin-right: 1rem;
+      justify-items: start; }
+      @media (max-width: 700px) {
+        .samples-content-links {
+          grid-column: 1 / -1; } }
+
+.links-wrapper {
+  display: flex;
+  justify-content: space-between; }
+  .links-wrapper p {
+    padding: 0.5rem;
+    font-size: 1.8rem; }
+  .links-wrapper a {
+    background-color: #ff4212;
+    color: white;
+    display: inline-block;
+    width: 9rem;
+    border-radius: 7%;
+    height: 2rem;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.5rem; }
